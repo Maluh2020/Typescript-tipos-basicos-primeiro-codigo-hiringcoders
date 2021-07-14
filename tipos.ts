@@ -75,4 +75,29 @@ exibirNota(true);
 //pode ser usado com variável tambem
 const nota: string | boolean = true;
 
+//Alias
+type Funcionario = {
+    nome: string;
+    sobrenome: string;
+    dataNascimento: Date;
+}
+
+//type Funcionarios = Array<Funcionario>;
+const funcionarios: Funcionario[] = [{
+    nome: 'Giganivalda',
+    sobrenome: 'Agripina',
+    dataNascimento: new Date()
+}, {
+    nome: 'Lorynn',
+    sobrenome: 'Rawzyhemberg',
+    dataNascimento: new Date()
+}];
+
+function tratarFuncionarios(funcionarios: Funcionario[])
+{
+    for(let funcionario of funcionarios) {
+        console.log('Nome do funcionário: ', funcionario.nome);
+    }
+}
+
 
