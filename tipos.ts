@@ -99,5 +99,3 @@ function tratarFuncionarios(funcionarios: Funcionario[])
         console.log('Nome do funcionário: ', funcionario.nome);
     }
 }
-
-
