@@ -1,4 +1,4 @@
-class Carro {
+class Carro2 {
     private velocidadeAtual: number = 0;
 
     constructor (
@@ -28,6 +28,23 @@ class Carro {
     }
 }
 
-const carro = new Carro('Porshe', 'Cayeni', 300);
+const carro2 = new Carro2('Porshe', 'Cayeni', 300);
 carro.acelerar();
 carro.frear();
+
+class Cayene extends Carro2{
+    private turbo = false;
+
+    constructor(){
+        super('Porshe', 'Cayene', 350);
+    }
+
+    ligarTurbo(){
+        this.turbo = true;
+    }
+}
+
+const cayene = new Cayene();
+cayene.acelerar();
+cayene.frear();
+cayene.ligarTurbo();
